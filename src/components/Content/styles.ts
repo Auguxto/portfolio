@@ -145,7 +145,7 @@ export const PlayButton = styled.div`
   border-radius: 48px;
 
   background: #66d36e;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 4px 20px -5px rgba(0, 0, 0, 0.8);
 
   position: absolute;
 
