@@ -31,8 +31,5 @@ export const Player = styled.div`
 
   background: #282828;
 
-  position: fixed;
-  bottom: 0;
-
   z-index: 4;
 `;

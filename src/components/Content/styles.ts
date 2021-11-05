@@ -133,8 +133,32 @@ export const DescriptionText = styled.p`
   color: rgba(255, 255, 255, 0.6);
 `;
 
+export const PlayButton = styled.div`
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 48px;
+  height: 48px;
+
+  border-radius: 48px;
+
+  background: #66d36e;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
+
+  position: absolute;
+
+  bottom: 10px;
+  right: 10px;
+
+  opacity: 0;
+`;
+
 export const Socials = styled.div`
   display: flex;
+
+  flex-wrap: wrap;
 
   margin-top: 11px;
   margin-left: 32px;
@@ -160,6 +184,15 @@ export const SocialCard = styled.a.attrs({
   border: none;
 
   text-decoration: none;
+
+  :hover {
+    ${PlayButton} {
+      opacity: 1;
+      bottom: 20px;
+
+      transition: all 0.5s;
+    }
+  }
 `;
 
 export const SocialCardIcon = styled.div<{ background: string }>`
@@ -167,6 +200,8 @@ export const SocialCardIcon = styled.div<{ background: string }>`
 
   align-items: center;
   justify-content: center;
+
+  position: relative;
 
   width: 100%;
   height: 171px;
@@ -186,6 +221,90 @@ export const SocialName = styled.p`
 `;
 
 export const SocialDescription = styled.p`
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+
+  color: rgba(255, 255, 255, 0.6);
+
+  margin-top: 6px;
+`;
+
+export const ProjectsTitle = styled.h2`
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 32px;
+
+  color: #ffffff;
+
+  margin-top: 48px;
+  margin-left: 34px;
+`;
+
+export const Projects = styled.div`
+  display: flex;
+
+  flex-wrap: wrap;
+
+  margin-top: 11px;
+  margin-left: 32px;
+
+  gap: 16px;
+`;
+
+export const ProjectCard = styled.button`
+  display: flex;
+
+  flex-direction: column;
+
+  width: 203px;
+  height: 273px;
+
+  padding: 16px;
+  position: relative;
+
+  background: #252525;
+  border-radius: 10px;
+  border: none;
+
+  cursor: pointer;
+
+  :hover {
+    ${PlayButton} {
+      opacity: 1;
+      bottom: 20px;
+
+      transition: all 0.5s;
+    }
+  }
+`;
+
+export const ProjectCardIcon = styled.div<{ background: string }>`
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+
+  width: 100%;
+  height: 171px;
+
+  background: ${(props) => props.background};
+  border-radius: 10px;
+`;
+
+export const ProjectName = styled.p`
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #ffffff;
+
+  margin-top: 16px;
+`;
+
+export const ProjectDescription = styled.p`
   font-weight: 500;
   font-size: 12px;
   line-height: 14px;

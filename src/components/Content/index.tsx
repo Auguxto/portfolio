@@ -5,6 +5,7 @@ import {
   Github,
   Instagram,
   Linkedin,
+  Play,
 } from "lucide-react";
 
 import {
@@ -16,6 +17,13 @@ import {
   DescriptionText,
   Header,
   Name,
+  PlayButton,
+  ProjectCard,
+  ProjectCardIcon,
+  ProjectDescription,
+  ProjectName,
+  Projects,
+  ProjectsTitle,
   SocialCard,
   SocialCardIcon,
   SocialDescription,
@@ -55,6 +63,9 @@ const Content: React.FC = () => {
         <SocialCard href="https://github.com/Auguxto">
           <SocialCardIcon background="#ffffff">
             <Github color="#030303" size={80} />
+            <PlayButton>
+              <Play size={22} color="#FFFFFF" fill="#FFFFFF" />
+            </PlayButton>
           </SocialCardIcon>
           <SocialName>Github</SocialName>
           <SocialDescription>Perfil no Github</SocialDescription>
@@ -67,6 +78,9 @@ const Content: React.FC = () => {
               color="#ffffff"
               size={80}
             />
+            <PlayButton>
+              <Play size={22} color="#FFFFFF" fill="#FFFFFF" />
+            </PlayButton>
           </SocialCardIcon>
           <SocialName>Linkedin</SocialName>
           <SocialDescription>Perfil no Linkedin</SocialDescription>
@@ -74,11 +88,62 @@ const Content: React.FC = () => {
         <SocialCard href="https://www.instagram.com/victor_auguxt0/">
           <SocialCardIcon background="linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%)">
             <Instagram strokeWidth={1} color="#ffffff" size={80} />
+            <PlayButton>
+              <Play size={22} color="#FFFFFF" fill="#FFFFFF" />
+            </PlayButton>
           </SocialCardIcon>
           <SocialName>Instagram</SocialName>
           <SocialDescription>Perfil no Instagram</SocialDescription>
         </SocialCard>
       </Socials>
+      <ProjectsTitle>Projetos</ProjectsTitle>
+      <Projects>
+        <ProjectCard>
+          <ProjectCardIcon background="red">
+            <PlayButton>
+              <Play size={22} color="#FFFFFF" fill="#FFFFFF" />
+            </PlayButton>
+          </ProjectCardIcon>
+          <ProjectName>Projeto 1</ProjectName>
+          <ProjectDescription>Descrição projeto 1</ProjectDescription>
+        </ProjectCard>
+        <ProjectCard>
+          <ProjectCardIcon background="blue">
+            <PlayButton>
+              <Play size={22} color="#FFFFFF" fill="#FFFFFF" />
+            </PlayButton>
+          </ProjectCardIcon>
+          <ProjectName>Projeto 2</ProjectName>
+          <ProjectDescription>Descrição projeto 2</ProjectDescription>
+        </ProjectCard>
+        <ProjectCard>
+          <ProjectCardIcon background="green">
+            <PlayButton>
+              <Play size={22} color="#FFFFFF" fill="#FFFFFF" />
+            </PlayButton>
+          </ProjectCardIcon>
+          <ProjectName>Projeto 3</ProjectName>
+          <ProjectDescription>Descrição projeto 3</ProjectDescription>
+        </ProjectCard>
+        <ProjectCard>
+          <ProjectCardIcon background="yellow">
+            <PlayButton>
+              <Play size={22} color="#FFFFFF" fill="#FFFFFF" />
+            </PlayButton>
+          </ProjectCardIcon>
+          <ProjectName>Projeto 4</ProjectName>
+          <ProjectDescription>Descrição projeto 4</ProjectDescription>
+        </ProjectCard>
+        <ProjectCard>
+          <ProjectCardIcon background="cyan">
+            <PlayButton>
+              <Play size={22} color="#FFFFFF" fill="#FFFFFF" />
+            </PlayButton>
+          </ProjectCardIcon>
+          <ProjectName>Projeto 5</ProjectName>
+          <ProjectDescription>Descrição projeto 5</ProjectDescription>
+        </ProjectCard>
+      </Projects>
     </Container>
   );
 };
