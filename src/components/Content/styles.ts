@@ -10,9 +10,22 @@ export const Container = styled.div`
 
   grid-area: main-content;
 
-  margin-bottom: 50px;
+  padding-bottom: 120px;
 
   position: relative;
+
+  overflow-y: scroll;
+
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+  }
 `;
 
 export const Header = styled.div`

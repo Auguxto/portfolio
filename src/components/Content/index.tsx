@@ -79,62 +79,6 @@ const Content: React.FC = () => {
           <SocialDescription>Perfil no Instagram</SocialDescription>
         </SocialCard>
       </Socials>
-      <Socials>
-        <SocialCard href="https://github.com/Auguxto">
-          <SocialCardIcon background="#ffffff">
-            <Github color="#030303" size={80} />
-          </SocialCardIcon>
-          <SocialName>Github</SocialName>
-          <SocialDescription>Perfil no Github</SocialDescription>
-        </SocialCard>
-        <SocialCard href="https://www.linkedin.com/in/victor-augusto-ferreira-076209209/">
-          <SocialCardIcon background="#0A66C2">
-            <Linkedin
-              strokeWidth={1}
-              fill="#ffffff"
-              color="#ffffff"
-              size={80}
-            />
-          </SocialCardIcon>
-          <SocialName>Linkedin</SocialName>
-          <SocialDescription>Perfil no Linkedin</SocialDescription>
-        </SocialCard>
-        <SocialCard href="https://www.instagram.com/victor_auguxt0/">
-          <SocialCardIcon background="linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%)">
-            <Instagram strokeWidth={1} color="#ffffff" size={80} />
-          </SocialCardIcon>
-          <SocialName>Instagram</SocialName>
-          <SocialDescription>Perfil no Instagram</SocialDescription>
-        </SocialCard>
-      </Socials>
-      <Socials>
-        <SocialCard href="https://github.com/Auguxto">
-          <SocialCardIcon background="#ffffff">
-            <Github color="#030303" size={80} />
-          </SocialCardIcon>
-          <SocialName>Github</SocialName>
-          <SocialDescription>Perfil no Github</SocialDescription>
-        </SocialCard>
-        <SocialCard href="https://www.linkedin.com/in/victor-augusto-ferreira-076209209/">
-          <SocialCardIcon background="#0A66C2">
-            <Linkedin
-              strokeWidth={1}
-              fill="#ffffff"
-              color="#ffffff"
-              size={80}
-            />
-          </SocialCardIcon>
-          <SocialName>Linkedin</SocialName>
-          <SocialDescription>Perfil no Linkedin</SocialDescription>
-        </SocialCard>
-        <SocialCard href="https://www.instagram.com/victor_auguxt0/">
-          <SocialCardIcon background="linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%)">
-            <Instagram strokeWidth={1} color="#ffffff" size={80} />
-          </SocialCardIcon>
-          <SocialName>Instagram</SocialName>
-          <SocialDescription>Perfil no Instagram</SocialDescription>
-        </SocialCard>
-      </Socials>
     </Container>
   );
 };
