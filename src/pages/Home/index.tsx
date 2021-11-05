@@ -1,16 +1,16 @@
 import React from "react";
 
-import { Container, SidebarAndContent, Player } from "./styles";
+import { Container, Player } from "./styles";
 
 import { Sidebar } from "../../components/Sidebar";
+import { Content } from "../../components/Content";
 
 const Home: React.FC = () => {
   return (
     <Container>
-      <SidebarAndContent>
-        <Sidebar />
-      </SidebarAndContent>
-      <Player />
+      <Sidebar />
+      <Content />
+      <Player>dwadw</Player>
     </Container>
   );
 };

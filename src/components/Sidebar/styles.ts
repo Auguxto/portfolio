@@ -7,6 +7,8 @@ export const Container = styled.div`
 
   flex-direction: column;
 
+  grid-area: side-bar;
+
   width: 300px;
   height: 100%;
 
