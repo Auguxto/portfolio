@@ -12,6 +12,8 @@ export const Container = styled.div`
 
   background: #030303;
 
+  user-select: none;
+
   overflow-y: scroll;
   ::-webkit-scrollbar {
     width: 5px;
@@ -69,6 +71,8 @@ export const NavItem = styled.button<{ active?: boolean }>`
   cursor: pointer;
 
   ${(props) => (props.active ? NavItemActive : null)}
+
+  transition: all 0.2s;
 
   :hover {
     background: rgba(255, 255, 255, 0.04);
@@ -150,6 +154,12 @@ export const CreateProjectText = styled.p`
   color: rgba(255, 255, 255, 0.5);
 
   margin-left: 20px;
+
+  transition: all 0.2s;
+
+  :hover {
+    color: rgba(255, 255, 255);
+  }
 `;
 
 export const Techs = styled.div`
@@ -157,7 +167,7 @@ export const Techs = styled.div`
 
   flex-direction: column;
 
-  margin-top: 70px;
+  margin-top: 40px;
   margin-bottom: 50px;
 
   padding: 0 24px;
@@ -202,4 +212,10 @@ export const TechText = styled.p`
   color: rgba(255, 255, 255, 0.5);
 
   margin-left: 20px;
+
+  transition: all 0.2s;
+
+  :hover {
+    color: rgba(255, 255, 255);
+  }
 `;
